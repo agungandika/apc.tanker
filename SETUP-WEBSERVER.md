@@ -14,6 +14,7 @@ kemudian simpan file tersebut. Silakan coba ping lewat console command: `ping ap
 2. Buat file 001-apc-tanker.conf di direktori `/etc/apache2/sites-enabled/` dengan isi file sebagai berikut:
 
 
+
 	<VirtualHost apc.tanker:80>
 	    # The ServerName directive sets the request scheme, hostname and port that
         # the server uses to identify itself. This is used when creating

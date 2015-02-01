@@ -58,7 +58,7 @@ MEMULAI APLIKASI
 
 **Tips**
 
-Jika ingin menggunakan custom url di komputer local Anda, silakan ikuti petunjuk di [SETUP-WEBSERVER.md](@SETUP-WEBSERVER.md).
+Jika ingin menggunakan custom url di komputer local Anda, silakan ikuti petunjuk di [SETUP-WEBSERVER.md](SETUP-WEBSERVER.md).
 
 
 Setelah aplikasi terinstall, Anda harus menjalankan beberapa langkah berikut untuk
