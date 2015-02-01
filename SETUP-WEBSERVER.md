@@ -15,40 +15,40 @@ kemudian simpan file tersebut. Silakan coba ping lewat console command: `ping ap
 
 
 
-	<VirtualHost apc.tanker:80>
-	    # The ServerName directive sets the request scheme, hostname and port that
-        # the server uses to identify itself. This is used when creating
-        # redirection URLs. 
-        ServerName apc.tanker
+        <VirtualHost apc.tanker:80>
+            # The ServerName directive sets the request scheme, hostname and port that
+            # the server uses to identify itself. This is used when creating
+            # redirection URLs. 
+            ServerName apc.tanker
         
-        ServerAdmin webmaster@apc.tanker
+            ServerAdmin webmaster@apc.tanker
         
-        # Sesuaikan dengan lokasi / direktori dimana Anda meng-install aplikasi
-        DocumentRoot /home/myuser/apc.tanker/backend/web
+            # Sesuaikan dengan lokasi / direktori dimana Anda meng-install aplikasi
+            DocumentRoot /home/myuser/apc.tanker/backend/web
     
-        # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
-        # error, crit, alert, emerg.
-        # It is also possible to configure the loglevel for particular
-        # modules, e.g.
-        #LogLevel info ssl:warn
+            # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+            # error, crit, alert, emerg.
+            # It is also possible to configure the loglevel for particular
+            # modules, e.g.
+            #LogLevel info ssl:warn
     
-        ErrorLog ${APACHE_LOG_DIR}/error-apc-backend.log
-        CustomLog ${APACHE_LOG_DIR}/access-acp-backend.log combined
+            ErrorLog ${APACHE_LOG_DIR}/error-apc-backend.log
+            CustomLog ${APACHE_LOG_DIR}/access-acp-backend.log combined
     
-        # For most configuration files from conf-available/, which are
-        # enabled or disabled at a global level, it is possible to
-        # include a line for only one particular virtual host. For example the
-        # following line enables the CGI configuration for this host only
-        # after it has been globally disabled with "a2disconf".
-        Include conf-available/serve-cgi-bin.conf
+            # For most configuration files from conf-available/, which are
+            # enabled or disabled at a global level, it is possible to
+            # include a line for only one particular virtual host. For example the
+            # following line enables the CGI configuration for this host only
+            # after it has been globally disabled with "a2disconf".
+            #Include conf-available/serve-cgi-bin.conf
     
-        # Enable php-fpm mode
-        <Directory />
-            Options All
-            AllowOverride All
-            Require all granted
-        </Directory>
-    </VirtualHost>
+            # Enable php-fpm mode
+            <Directory />
+                Options All
+                AllowOverride All
+                Require all granted
+            </Directory>
+        </VirtualHost>
     
 3. Restart Web Server dengan perintah:
 
