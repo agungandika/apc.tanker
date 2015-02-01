@@ -53,9 +53,13 @@ php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
 php composer.phar create-project --prefer-dist --stability=dev agungandika/apc.tanker sibbm
 ~~~
 
-
 MEMULAI APLIKASI
 ----------------
+
+**Tips**
+
+Jika ingin menggunakan custom url di komputer local Anda, silakan ikuti petunjuk di [SETUP-WEBSERVER.md](@SETUP-WEBSERVER.md).
+
 
 Setelah aplikasi terinstall, Anda harus menjalankan beberapa langkah berikut untuk
 inisiasi aplikasi. Anda hanya perlu menjalankan langkah berikut satu kali.
